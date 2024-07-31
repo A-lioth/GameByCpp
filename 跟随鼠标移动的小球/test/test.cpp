@@ -6,6 +6,8 @@ int main()
 	int x = 300;
 	int y = 300;
 
+	BeginBatchDraw();
+
 	while (true)
 	{
 		ExMessage msg;
@@ -21,6 +23,7 @@ int main()
 		solidcircle(x, y, 100);
 		FlushBatchDraw();
 	}
-
+	EndBatchDraw();
+	closegraph();
 	return 0;
 }
